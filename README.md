@@ -3,8 +3,8 @@
 ## Desktop App - Dev. Plan (2025/03/08, Kyi) 
   - Use Mattermost Baseline Framework 
     - https://github.com/mattermost/desktop 
-  - Flow of Bill Agent Processing: 
-    - User Inputs Insurance Pdfs 
+  - Flow of App (Billing Agent) Processing: 
+    - User Inputs Insurance Pdfs of EOB 
     - Call DenHub OCR Server - Extract Bill Data 
     - Call OpenDental MySQL Server - Extract Claim Data 
     - (Run Billing Agent for each insurance pdf format)
