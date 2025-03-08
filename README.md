@@ -1,12 +1,16 @@
 # ndai-denhub
 
-## Desktop App 
-- Dev. Plan - 2025/03/08, Kyi
-  - Use Mattermost Baseline Framework - https://github.com/mattermost/desktop 
-  - Steps: 
-    - TODO  
+## Desktop App - Dev. Plan (2025/03/08, Kyi) 
+  - Use Mattermost Baseline Framework 
+    - https://github.com/mattermost/desktop 
+  - Flow of Bill Agent Processing: 
+    - User Inputs Insurance Pdfs 
+    - Call DenHub OCR Server - Extract Bill Data 
+    - Call OpenDental MySQL Server - Extract Claim Data 
+    - (Run Billing Agent for each insurance pdf format)
+  - ETC.   
 
-## Demo Server Setup @ Ubuntu 22.04 (2025/03/08, Kyi)
+## Demo Server - Setup @ Ubuntu 22.04 (2025/03/08, Kyi)
 - python3.10 venv install
   - sudo apt install python3-venv
   - sudo apt install python3-pip
