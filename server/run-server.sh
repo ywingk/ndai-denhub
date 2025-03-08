@@ -10,3 +10,5 @@ cd ${HOME}/ndai-denhub/server
 echo "- Running new streamlit servers... "
 streamlit run ndai-denhub.py --server.port 30003 \
     --client.showSidebarNavigation=False &> /dev/null &
+#streamlit run ndai-denhub.py --server.port 30003 \
+#    --client.showSidebarNavigation=False 

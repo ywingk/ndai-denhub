@@ -1,0 +1,13 @@
+streamlit
+numpy
+websockets
+librosa
+opencv-python
+openai
+# -- for pdf reading --
+#pdfminer
+#beautifulsoup4
+python-doctr
+python-doctr[torch]
+pikepdf
+pymysql

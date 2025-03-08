@@ -15,7 +15,10 @@ st.set_page_config(
     layout="wide",
     menu_items=None
 )
-temp_dir = "./temp"
+
+temp_dir = "./pdfs"
+if not os.path.exists(temp_dir):
+    os.makedirs(temp_dir)
 ocr_model = ocr_predictor("db_resnet50", "crnn_vgg16_bn", \
     pretrained=True).cuda() # for gpu inference 
 
@@ -125,7 +128,7 @@ if __name__ == "__main__":
                     start_time = time.time()
                     dst = Pdf.new()
                     dst.pages.append(page)
-                    part_fn = 'pdfs/page_'+str(i+1)+'.pdf'
+                    part_fn = temp_dir+'/page_'+str(i+1)+'.pdf'
                     dst.save(f'{part_fn}')
                     img_doc = DocumentFile.from_pdf(part_fn)
                     result, json_data = ocr(img_doc)
