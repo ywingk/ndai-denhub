@@ -1,6 +1,10 @@
 # ndai-denhub
 
 ## Desktop App 
+- Dev. Plan - 2025/03/08, Kyi
+  - Use Mattermost Baseline Framework - https://github.com/mattermost/desktop 
+  - Steps: 
+    - TODO  
 
 ## Demo Server Setup @ Ubuntu 22.04 (2025/03/08, Kyi)
 - python3.10 venv install
