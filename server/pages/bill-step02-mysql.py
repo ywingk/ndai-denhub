@@ -62,7 +62,7 @@ if __name__ == "__main__":
         with conn.cursor() as cursor:
             selection, output = st.columns((0.5, 0.5))
             with selection:
-                sql = st.text_input("$\clubs ~~ $ Input SQL Query - KR Test Server: ", \
+                sql = st.text_input("$\clubs ~~ $ Input SQL Query - "+dent_id+" Server: ", \
                     placeholder="describe claim")
                 st.markdown(test_sql)
                 if sql:
