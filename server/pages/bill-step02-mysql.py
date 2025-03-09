@@ -25,7 +25,7 @@ dent_sites['KR'] = [host, user, pwd, db]
 # --- NC server (Don Lee) ---
 host = "75.165.149.223"
 user='donlee'
-pwd = 'test1234'
+pwd = 'denhub123!'
 db = 'demo'
 dent_sites['NC'] = [host, user, pwd, db]
 # -------------------------------------------------
