@@ -11,15 +11,26 @@ st.set_page_config(
     layout="wide",
     menu_items=None
 )
+# -------------------------------------------------
+dent_sites = {}
+dent_ids = ['KR', 'NC']
 
+# --- KR server (Kyi) --- 
+host = "192.168.219.108"
+user='kyi'
+pwd = '.guppy123!'
+db = 'demo'
+dent_sites['KR'] = [host, user, pwd, db]
+
+# --- NC server (Don Lee) ---
+host = "75.165.149.223"
+user='donlee'
+pwd = 'test1234'
+db = 'demo'
+dent_sites['NC'] = [host, user, pwd, db]
 # -------------------------------------------------
 
-conn = pymysql.connect(
-    host="192.168.219.108",
-    user="kyi",
-    password=".guppy123!",
-    db="demo")
-
+# -------------------------------------------------
 if 'output' not in st.session_state:
     st.session_state.output = ""
 
@@ -38,6 +49,15 @@ test_sql = '''
 if __name__ == "__main__":
     st.title(page_title)
 
+    dent_id = st.radio("$\clubs ~~ $ Select Dental Office:", dent_ids)
+    if dent_id:
+        host, user, password, db = dent_sites[dent_id]
+        conn = pymysql.connect(
+            host=host,
+            user=user,
+            password=password,
+            db=db)
+        
     try:
         with conn.cursor() as cursor:
             selection, output = st.columns((0.5, 0.5))
