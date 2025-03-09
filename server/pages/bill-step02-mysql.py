@@ -1,5 +1,5 @@
 import streamlit as st
-import requests
+#import requests
 import pymysql
 
 # -------------------------------------------------
