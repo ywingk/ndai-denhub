@@ -1,11 +1,11 @@
 #
-. ${HOME}/.venv/ndai/bin/activate
+#. ${HOME}/.venv/ndai/bin/activate
+#cd ${HOME}/ndai-denhub/server
 #
 # clean 
 echo "- Killing streamlit servers... "
 killall -9 streamlit
 #
-cd ${HOME}/ndai-denhub/server
 # run 
 echo "- Running new streamlit servers... "
 streamlit run ndai-denhub.py --server.port 30003 \
