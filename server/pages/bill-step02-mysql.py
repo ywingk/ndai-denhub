@@ -13,7 +13,7 @@ st.set_page_config(
 )
 # -------------------------------------------------
 dent_sites = {}
-dent_ids = ['KR', 'NC']
+dent_ids = ['NC', 'KR']
 
 # --- KR server (Kyi) --- 
 host = "192.168.219.108"
