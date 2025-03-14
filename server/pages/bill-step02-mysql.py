@@ -13,10 +13,17 @@ st.set_page_config(
 )
 # -------------------------------------------------
 dent_sites = {}
-dent_ids = ['NC', 'KR']
+dent_ids = ['NC', 'KR', 'Local']
+
+# --- Local server (Kyi) --- 
+host = "192.168.219.108"
+user='kyi'
+pwd = '.guppy123!'
+db = 'demo'
+dent_sites['Local'] = [host, user, pwd, db]
 
 # --- KR server (Kyi) --- 
-host = "192.168.219.108"
+host = "115.143.182.27"
 user='kyi'
 pwd = '.guppy123!'
 db = 'demo'

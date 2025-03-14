@@ -7,7 +7,7 @@ from doctr.models import ocr_predictor
 from pikepdf import Pdf
 
 # -------------------------------------------------
-page_title = "Bill - OCR Reader"
+page_title = "Bill Reader - OCR"
 
 st.set_page_config(
     page_title = page_title,

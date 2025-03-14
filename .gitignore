@@ -1,0 +1,7 @@
+__pycache__
+*/__pycache__/*
+lib
+_trash
+temp/
+pdfs/
+log/

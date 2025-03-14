@@ -12,3 +12,5 @@ python-doctr
 python-doctr[torch]
 pikepdf
 pymysql
+# -- api --
+aiohttp
