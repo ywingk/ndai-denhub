@@ -38,7 +38,7 @@ async def root():
     return {"HealthCheck Message": "OK"}
 
 # ------------------------------------------------
-@app.post("/denapi/billing-agent/")
+@app.post("/billing-agent/")
 async def ba_run(ba_req: BAReq):
     try:
         #print(f'** input: {ba_req:}')
