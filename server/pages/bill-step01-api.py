@@ -9,8 +9,8 @@ import requests
 import json
 
 # -------------------------------------------------
-#denapi_url = "https://ndai.ddns.net/denapi/billing-agent/"
-denapi_url = "http://0.0.0.0:30005/denapi/billing-agent/"
+denapi_url = "https://ndai.ddns.net/denapi/billing-agent/"
+#denapi_url = "http://0.0.0.0:30005/denapi/billing-agent/"
 # -------------------------------------------------
 page_title = "Bill Reader - API"
 

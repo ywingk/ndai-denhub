@@ -7,9 +7,9 @@ librosa
 opencv-python
 openai
 # -- for pdf reading --
-#python-doctr
-#python-doctr[torch]
-#pikepdf
+python-doctr
+python-doctr[torch]
+pikepdf
 # -- mysql -- 
 pymysql
 # -- api --
