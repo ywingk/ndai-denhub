@@ -1,6 +1,8 @@
 #
+if [ "${USER}" == "kyi" ]; then
 . ${HOME}/.venv/ndai/bin/activate
 cd ${HOME}/ndai-denhub/server
+fi
 #
 echo "- Killing uvicorn server... "
 killall -9 uvicorn
