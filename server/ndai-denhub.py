@@ -16,23 +16,23 @@ st.title(page_title)
 # -----------------------------------------
 st.subheader("- Billing Automation")
 
-st.page_link(
-    "pages/bill-step01-ocr.py",
-    label="Step 1 - Pdf Bill Reader w. OCR",
-    icon="🛞"
-)
+# st.page_link(
+#     "pages/bill-step01-ocr.py",
+#     label="Step 1 - Pdf Bill Reader - OCR",
+#     icon="🛞"
+# )
 
 st.page_link(
     "pages/bill-step01-api.py",
-    label="Step 1b - Pdf Bill Reader w. API",
+    label="Step 1b - Pdf Bill Reader - API",
     icon="🛞"
 )
 
-st.page_link(
-    "pages/bill-step02-odapi.py",
-    label="Step 2 - OpenDental API Reader",
-    icon="🛞"
-)
+# st.page_link(
+#     "pages/bill-step02-odapi.py",
+#     label="Step 2 - OpenDental API Reader",
+#     icon="🛞"
+# )
 
 st.page_link(
     "pages/bill-step02-mysql.py",
