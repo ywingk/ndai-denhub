@@ -1,16 +1,20 @@
-#import os
+import os
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 import time
-#import asyncio
-#import aiohttp
 import base64
 import requests
 import json
+from src.ba.ins_company import InsCompany
 
 # -------------------------------------------------
-denapi_url = "https://ndai.ddns.net/denapi/billing-agent/"
-#denapi_url = "http://0.0.0.0:30005/denapi/billing-agent/"
+if os.environ['USER'] == 'kyi':
+    denapi_url = "http://0.0.0.0:30005/denapi/billing-agent/"
+else:
+    denapi_url = "https://ndai.ddns.net/denapi/billing-agent/"
+
+ins = InsCompany()
+
 # -------------------------------------------------
 page_title = "Bill Reader - API"
 
@@ -43,6 +47,7 @@ def run_ba_api(user_name, pdf_data):
     )
     print(f'** response: {response.text:}')
     result = json.loads(response.text)
+    #import pdb; pdb.set_trace()
     result = json.loads(result)
     return result
     
@@ -72,4 +77,7 @@ if __name__ == "__main__":
             st.markdown(f"** Billing Agent - API Response: ({elapsed_time:.2f} seconds)")
             #import pdb; pdb.set_trace()
             for item in result:
-                st.markdown(f"- {item}")
+                with st.expander("ocr data"):
+                    st.markdown(f"{item}")
+                eob_info = ins.extract_eob_info(item)
+                st.markdown(f"- {eob_info}")

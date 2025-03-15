@@ -39,6 +39,7 @@ async def root():
 
 # ------------------------------------------------
 @app.post("/billing-agent/")
+@app.post("/denapi/billing-agent/")
 async def ba_run(ba_req: BAReq):
     try:
         #print(f'** input: {ba_req:}')
