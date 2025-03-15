@@ -80,4 +80,5 @@ if __name__ == "__main__":
                 with st.expander("ocr data"):
                     st.markdown(f"{item}")
                 eob_info = ins.extract_eob_info(item)
-                st.markdown(f"- {eob_info}")
+                st.markdown(f"- EOB Info: {eob_info}")
+                st.markdown(f"- TODO: generate mysql script for claim processing...")
