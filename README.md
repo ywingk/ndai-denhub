@@ -11,12 +11,14 @@
   - ETC.   
 
 ## Demo Server - Setup @ Ubuntu 22.04 (2025/03/08, Kyi)
-- python3.10 venv install
+- python3.10 venv setup 
   - sudo apt install python3-venv
   - sudo apt install python3-pip
   - python3 -m venv ~/.venv/ndai
   - source ~/.venv/ndai/bin/activate
 - python3.10 venv 환경에서,
   - pip install -r requirements.txt
-- Start streamlit server 
-  - bash run-server.sh 
+- Start streamlit server (Web - Demo Client)
+  - bash run-st-server.sh 
+- Start fastapi server (OCR - API Server)
+  - bash run-api-server.sh 
